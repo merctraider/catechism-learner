@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="100dp"
+    tools:context=".ProgressReviewFragment">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:maxHeight="100dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/hello_blank_fragment" />
+
+    <TextView
+        android:id="@+id/answerTextView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:maxHeight="120dp"
+
+        android:scrollbars="vertical"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="16sp"
+        android:textStyle="bold|italic" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/blankFillInputLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/progress_review_instruction">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxHeight="240dp"
+            android:scrollbars="vertical" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonProceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Catechism Learner</string>
+
+    <string-array name="sections">
+        <item>The Ten Commandments</item>
+        <item>The Apostles\' Creed</item>
+        <item>The Lord\'s Prayer</item>
+        <item>The Sacrament of Holy Baptism</item>
+        <item>Confession</item>
+        <item>The Sacrament of the Altar</item>
+    </string-array>
+    <string name="title_activity_learn_menu">Learn Menu</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Proceed</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+
+    <string name="title_activity_instruction">Learn</string>
+    <string name="practice_instruction_text">Type this phrase 3 to 5 times (or until you are confident). It is recommended that you read it out loud as you do so.</string>
+    <string name="progress_review_instruction">Fill in the blanks</string>
+
+
+
+    <string name="hello_blank_fragment">Oh, you bishops! How will you ever answer to Christ for letting the people carry on so disgracefully and not attending to the duties of your office even for a moment? One can only hope judgment does not strike you! You command the Sacrament in one kind only, insist on the observance of your human ways, and yet are unconcerned whether the people know the Lord\’s Prayer, the Creed, the Ten Commandments, or indeed any of God\’s Word. Woe, woe to you forever!</string>
+
+    <string name="long_placeholder_text">I believe that God has made me and all creatures; that He has given me my body and soul, eyes, ears, and all my members, my reason and all my senses, and still takes care of them. He also gives me clothing and shoes, food and drink, house and home, wife and children, land, animals, and all I have. He richly and daily provides me with all that I need to support this body and life. He defends me against all danger and guards and protects me from all evil. All this He does only out of fatherly, divine goodness and mercy, without any merit or worthiness in me. For all this it is my duty to thank and praise, serve and obey Him.</string>
+    <string name="tip">Come back to review this again once in awhile to retain what you have learnt.</string>
+</resources>

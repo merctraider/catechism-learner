@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="section1">
+        <item>The First Commandment</item>
+        <item>The Second Commandment</item>
+        <item>The Third Commandment</item>
+        <item>The Fourth Commandment</item>
+        <item>The Fifth Commandment</item>
+        <item>The Sixth Commandment</item>
+        <item>The Seventh Commandment</item>
+        <item>The Eighth Commandment</item>
+        <item>The Ninth Commandment</item>
+        <item>The Tenth Commandment</item>
+        <item>What does God say about all these Commandments?</item>
+        <item>What does this mean?</item>
+    </string-array>
+
+    <string-array name="section2">
+        <item>The First Article</item>
+        <item>The Second Article</item>
+        <item>The Third Article</item>
+    </string-array>
+
+    <string-array name="section3">
+        <item>The Introduction</item>
+        <item>The First Petition (What does this mean?)</item>
+        <item>The First Petition (How is God\'s name kept holy?)</item>
+        <item>The Second Petition (What does this mean?)</item>
+        <item>The Second Petition (How does God\'s kingdom come?)</item>
+        <item>The Third Petition (What does this mean?)</item>
+        <item>The Third Petition (How is God\'s will done?)</item>
+        <item>The Fourth Petition (What does this mean?)</item>
+        <item>The Fourth Petition (What is meant by daily bread?)</item>
+        <item>The Fifth Petition</item>
+        <item>The Sixth Petition</item>
+        <item>The Seventh Petition</item>
+        <item>The Conclusion</item>
+    </string-array>
+
+    <string-array name="section4">
+        <item>What is Baptism?</item>
+        <item>Which is that word of God?</item>
+        <item>What does Baptism give or profit?</item>
+        <item>Which are such words and promises of God?</item>
+        <item>How can water do such great things?</item>
+        <item>What does such baptizing with water signify?</item>
+        <item>Where is this written?</item>
+    </string-array>
+
+    <string-array name="section5">
+        <item>What is Confession?</item>
+        <item>What sins should we confess?</item>
+        <item>Which are these?</item>
+    </string-array>
+
+    <string-array name="section6">
+        <item>What is the Sacrament of the Altar?</item>
+        <item>Where is this written?</item>
+        <item>What is the benefit of such eating and drinking?</item>
+        <item>How can bodily eating and drinking do such great things?</item>
+        <item>Who, then, receives such Sacrament worthily?</item>
+    </string-array>
+
+
+
+
+</resources>
