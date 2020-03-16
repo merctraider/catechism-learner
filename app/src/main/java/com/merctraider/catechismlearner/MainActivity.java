@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
             3,
             13,
             7,
-            3,
+            5,
             5
 
     };

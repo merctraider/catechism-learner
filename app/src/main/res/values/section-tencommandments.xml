@@ -2,56 +2,56 @@
 <resources>
 
     <string-array name="section1_part_question">
-        <item>The First Commandment\n Thou shalt have no other gods.\n\n What does this mean?</item>
+        <item>The First Commandment\n You shall have no other gods.\n\nWhat does this mean?</item>
 
-        <item>The Second Commandment\n Thou shalt not take the name of the Lord, thy God, in vain.\n\n What does this mean?</item>
+        <item>The Second Commandment\n You shall not misuse the name of your God.\n\nWhat does this mean?</item>
 
-        <item>The Third Commandment\n Thou shalt sanctify the holy-day.\n\n What does this mean?</item>
+        <item>The Third Commandment\n You shall sanctify the day of rest.\n\nWhat does this mean?</item>
 
-        <item>The Fourth Commandment\n Thou shalt honor thy father and thy mother.\n\n What does this mean?</item>
+        <item>The Fourth Commandment\n You shall honor your father and your mother.\n\nWhat does this mean?</item>
 
-        <item>The Fifth Commandment\n Thou shalt not kill.\n\n What does this mean?</item>
+        <item>The Fifth Commandment\n You shall not murder.\n\nWhat does this mean?</item>
 
-        <item>The Sixth Commandment\n Thou shalt not commit adultery.\n\n What does this mean?</item>
+        <item>The Sixth Commandment\n You shall not commit adultery.\n\nWhat does this mean?</item>
 
-        <item>The Seventh Commandment\n Thou shalt not steal.\n\n What does this mean?</item>
+        <item>The Seventh Commandment\n You shall not steal.\n\nWhat does this mean?</item>
 
-        <item>The Eighth Commandment\n Thou shalt not bear false witness against thy neighbor..\n\n What does this mean?</item>
+        <item>The Eighth Commandment\n You shall not give false testimony against your neighbor.\n\nWhat does this mean?</item>
 
-        <item>The Ninth Commandment\n Thou shalt not covet thy neighbor\'s house.\n\n What does this mean?</item>
+        <item>The Ninth Commandment\n You shall not covet your neighbor\'s house.\n\nWhat does this mean?</item>
 
-        <item>The Tenth Commandment\n Thou shalt not covet thy neighbor\'s wife, nor his man-servant, nor his maid-servant, nor his cattle, nor anything that is his..\n\n What does this mean?</item>
+        <item>The Tenth Commandment\n You shall not covet your neighbor\'s wife, manservant, maidservant, animals, or anything that is his.\n\nWhat does this mean?</item>
 
-        <item>What Does God Say of All These Commandments? \n He says thus(Exodus 20:5f):</item>
+        <item>What Does God Say of All These Commandments?:</item>
 
-        <item>I the Lord, thy God, am a jealous God, visiting the iniquity of the fathers upon the children unto the third and fourth generation of them that hate Me, and showing mercy unto thousands of them that love Me and keep My commandments.
+        <item>He says: "I the Lord, your God, am a jealous God, who visits the sin of the fathers upon their children who hate Me, to the third and fourth generation; but to those who love Me and keep My commandments, I do good for a thousand generations.
             \n\n What does this mean?</item>
     </string-array>
 
     <string-array name="section1_part_answer">
         <item>We should fear, love, and trust in God above all things.</item>
 
-        <item>We should fear and love God that we may not curse, swear, use witchcraft, lie, or deceive by His name, but call upon it in every trouble, pray, praise, and give thanks.</item>
+        <item>We should fear and love God, that we do not curse, swear, practice witchcraft, lie, or deceive by His name; but call upon it in every trouble, pray, praise, and give thanks.</item>
 
-        <item>We should fear and love God that we may not despise preaching and His Word, but hold it sacred, and gladly hear and learn it.</item>
+        <item>We should fear and love God, that we do not despise preaching and His Word; but hold it sacred, and gladly hear and learn it.</item>
 
-        <item>We should fear and love God that we may not despise nor anger our parents and masters, but give them honor, serve, obey, and hold them in love and esteem.</item>
+        <item>We should fear and love God, that we do not despise or anger our parents and those in authority over us; but honor them, serve and obey them, love and cherish them.</item>
 
-        <item>We should fear and love God that we may not hurt nor harm our neighbor in his body, but help and befriend him in every bodily need.</item>
+        <item>We should fear and love God, that we do not hurt or harm our neighbor in his body; but help and support him in every bodily need.</item>
 
-        <item>We should fear and love God that we may lead a chaste and decent life in words and deeds, and each love and honor his spouse.</item>
+        <item>We should fear and love God, that we lead a pure and chaste life in word and deed, and each one love and honor his spouse.</item>
 
-        <item>We should fear and love God that we may not take our neighbor\'s money or property, nor get them by false ware or dealing, but help him to improve and protect his property and business</item>
+        <item>We should fear and love God, that we do not take our neighbor\'s money or property, nor get them with deceitful products or dealings; but help him to improve and protect his property and livelihood.</item>
 
-        <item>We should fear and love God that we may not deceitfully belie, betray, slander, or defame our neighbor, but defend him, speak well of him, and put the best construction on everything.</item>
+        <item>We should fear and love God, that we do not falsely deceive, betray, or slander our neighbor, or give him a bad reputation; but defend him, speak well of him, and put the best construction on everything.</item>
 
-        <item>We should fear and love God that we may not craftily seek to get our neighbor\'s inheritance or house, and obtain it by a show of right, etc., but help and be of service to him in keeping it.</item>
+        <item>We should fear and love God, that we do not scheme to get our neighbor\'s inheritance or house, nor get it in a way that outwardly appears lawful, and so on; but aid and assist him to keep it.</item>
 
-        <item>We should fear and love God that we may not estrange, force, or entice away our neighbor\'s wife, servants, or cattle, but urge them to stay and do their duty.</item>
+        <item>We should fear and love God, that we do not unharness, coerce, or alienate from our neighbor his wife, servants, or animals; but urge them to stay and do their duty.</item>
 
-        <item>I the Lord, thy God, am a jealous God, visiting the iniquity of the fathers upon the children unto the third and fourth generation of them that hate Me, and showing mercy unto thousands of them that love Me and keep My commandments.</item>
+        <item>He says: "I the Lord, your God, am a jealous God, who visits the sin of the fathers upon their children who hate Me, to the third and fourth generation; but to those who love Me and keep My commandments, I do good for a thousand generations.</item>
 
-        <item>God threatens to punish all that transgress these commandments. Therefore we should dread His wrath and not act contrary to these commandments. But He promises grace and every blessing to all that keep these commandments. Therefore we should also love and trust in Him, and gladly do according to His commandments.</item>
+        <item>God threatens to punish all who transgress these commandments; therefore, we should fear His wrath and not disobey them. But He promises grace and every blessing to all who keep them; therefore, we should also love and trust in Him, and gladly obey His commandments.</item>
 
     </string-array>
 

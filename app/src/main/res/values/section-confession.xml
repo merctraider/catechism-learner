@@ -1,12 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="section5_part_question">
-        <item>What is Confession?</item>
-        <item>What sins should we confess?</item>
+        <item>What are the words about the ministry of the keys?</item>
+        <item>What does this mean?</item>
+        <item>What is confession?</item>
+        <item>What sins should a person confess?</item>
         <item>Which are these?</item>
     </string-array>
 
     <string-array name="section5_part_answer">
+        <item>The Lord Jesus breathed on His disciples and said to them, "Receive the Holy Spirit! If you forgive the sins of any, to them they are forgiven, and if you retain the sins of any, to them they are retained."</item>
+
+        <item>I believe in what the called ministers of Christ do among us, by His divine command— especially when they exclude public, impenitent sinners from the Christian congregation, and when they absolve those who repent of their sins and are willing to mend their ways— that it is all as valid and certain in heaven also, as if our dear Lord Christ did it Himself.</item>
+
         <item>Confession embraces two parts: the one is, that we confess our sins; the other, that we receive absolution, or forgiveness, from the confessor, as from God Himself, and in no wise doubt, but firmly believe, that our sins are thereby forgiven before God in heaven.</item>
 
         <item>Before God we should plead guilty of all sins, even of those which we do not know, as we do in the Lord\'s Prayer. But before the confessor we should confess those sins alone which we know and feel in our hearts.</item>

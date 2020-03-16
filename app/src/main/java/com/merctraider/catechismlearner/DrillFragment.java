@@ -31,6 +31,7 @@ public class DrillFragment extends Fragment {
 
     int progressTracker;
 
+    MediaPlayer ring;
 
     public interface DrillFragmentListener{
 
@@ -59,8 +60,9 @@ public class DrillFragment extends Fragment {
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        ring = MediaPlayer.create(getContext(), R.raw.ding);
 
-        final MediaPlayer ring = MediaPlayer.create(getContext(), R.raw.ding);
+
 
         practiceTextInputLayout.getEditText().addTextChangedListener(new TextWatcher() {
             @Override
@@ -145,6 +147,13 @@ public class DrillFragment extends Fragment {
     public void getAnswer(String answer, int progress ){
         correctAnswer = answer;
         progressTracker = progress;
+
+    }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        ring.release();
 
     }
 }

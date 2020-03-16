@@ -2,6 +2,7 @@ package com.merctraider.catechismlearner;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,6 +38,13 @@ public class FullDisplayFragment extends Fragment {
         buttonProceed = v.findViewById(R.id.button_proceed);
         questionTextView.setText(mQuestion);
         answerTextView.setText(mAnswer);
+        if(mQuestion.length() > 200){
+            questionTextView.setMovementMethod(new ScrollingMovementMethod());
+        }
+        if(mAnswer.length() > 500){
+            answerTextView.setMovementMethod(new ScrollingMovementMethod());
+        }
+
         buttonProceed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

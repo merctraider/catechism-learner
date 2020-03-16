@@ -4,7 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
-import android.media.MediaPlayer;
+import android.media.AudioAttributes;
+import android.media.SoundPool;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.VibrationEffect;
@@ -13,9 +14,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import androidx.appcompat.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import com.google.android.material.textfield.TextInputLayout;
 
@@ -34,6 +35,9 @@ public class ReviewActivity extends AppCompatActivity {
     int partIndex = 0;
     int sectionIndex;
 
+    SoundPool soundPool;
+    int dingSound;
+
     String[] reviewQuestions;
     String[] reviewAnswers;
 
@@ -47,6 +51,18 @@ public class ReviewActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
         String[] sections = getResources().getStringArray(R.array.sections);
+
+        AudioAttributes audioAttributes = new AudioAttributes.Builder()
+                .setUsage(AudioAttributes.USAGE_ASSISTANCE_SONIFICATION)
+                .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                .build();
+        soundPool = new SoundPool.Builder()
+                .setMaxStreams(10)
+                .setAudioAttributes(audioAttributes)
+                .build();
+        //soundPool = new SoundPool(6, AudioManager.STREAM_MUSIC, 0);
+        dingSound = soundPool.load(this, R.raw.ding, 1);
+
 
 
 
@@ -64,7 +80,7 @@ public class ReviewActivity extends AppCompatActivity {
         getQnASet(sectionIndex);
 
         setQnA(reviewQuestions[partIndex], reviewAnswers[partIndex]);
-        final MediaPlayer ring = MediaPlayer.create(this, R.raw.ding);
+        //final MediaPlayer ring = MediaPlayer.create(this, R.raw.ding);
 
 
         buttonProceed.setOnClickListener(new View.OnClickListener() {
@@ -77,9 +93,7 @@ public class ReviewActivity extends AppCompatActivity {
                         updateEntry(keyToUpdate, 1);
 
                         navigateQuestions(true);
-                        ring.start();
-
-
+                        playSound(dingSound);
 
                     } else  {
                         endActivity();
@@ -91,7 +105,6 @@ public class ReviewActivity extends AppCompatActivity {
                     blankFillInputLayout.getEditText().setHint(mAnswer);
                     if(mAnswer.length() > 500){
                         blankFillInputLayout.getEditText().setTextSize(14);
-
                     }
                     blankFillInputLayout.getEditText().setText("");
                     vibrateDevice(200);
@@ -115,6 +128,11 @@ public class ReviewActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void playSound(int sound){
+        Log.d("Sound", dingSound + " should be playing");
+        soundPool.play(dingSound, 1, 1, 1, 0, 1);
     }
 
     void endActivity(){
@@ -260,5 +278,12 @@ public class ReviewActivity extends AppCompatActivity {
             navigateQuestions(false);
         }
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        soundPool.release();
+        soundPool = null;
     }
 }

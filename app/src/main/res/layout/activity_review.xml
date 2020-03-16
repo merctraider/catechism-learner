@@ -48,6 +48,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:maxHeight="300dp"
             android:scrollbars="vertical"
             />
     </com.google.android.material.textfield.TextInputLayout>

@@ -3,11 +3,14 @@ package com.merctraider.catechismlearner;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.media.AudioAttributes;
+import android.media.SoundPool;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.VibrationEffect;
 import android.os.Vibrator;
 import android.util.Log;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -36,7 +39,10 @@ public class InstructionActivity extends AppCompatActivity implements FullDispla
 
     String[] answerParts;
     int progressTracker = 0;
-    String answerToTest;
+
+
+    SoundPool soundPool;
+    int dingSound;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,8 +50,19 @@ public class InstructionActivity extends AppCompatActivity implements FullDispla
         setContentView(R.layout.activity_instruction);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_close);
 
         fullDisplayFragment = new FullDisplayFragment();
+
+        AudioAttributes audioAttributes = new AudioAttributes.Builder()
+                .setUsage(AudioAttributes.USAGE_ASSISTANCE_SONIFICATION)
+                .setContentType(AudioAttributes.CONTENT_TYPE_SONIFICATION)
+                .build();
+        soundPool = new SoundPool.Builder()
+                .setMaxStreams(6)
+                .setAudioAttributes(audioAttributes)
+                .build();
+        dingSound = soundPool.load(this, R.raw.ding, 1);
 
 
         getSupportFragmentManager().beginTransaction()
@@ -63,6 +80,13 @@ public class InstructionActivity extends AppCompatActivity implements FullDispla
 
         fullDisplayFragment.getQuestionsAndAnswers(mQuestion, mAnswer);
         splitAnswer();
+
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onBackPressed();
+            }
+        });
 
 
 
@@ -104,6 +128,10 @@ public class InstructionActivity extends AppCompatActivity implements FullDispla
         }
     }
 
+    public void playSound(int sound){
+        soundPool.play(sound, 1, 1, 0, 0, 1);
+    }
+
     @Override
     public void onFullDisplayFinish() {
 
@@ -124,6 +152,7 @@ public class InstructionActivity extends AppCompatActivity implements FullDispla
     @Override
     public void onReviewCompleted(int progress) {
         progressTracker = progress;
+        playSound(dingSound);
 
         if(progressTracker < answerParts.length){
             drillFragment = new DrillFragment();
@@ -249,5 +278,12 @@ public class InstructionActivity extends AppCompatActivity implements FullDispla
         intent.putExtra("SectionIndex", sectionIndex);
         startActivity(intent);
         overridePendingTransition(R.anim.nav_default_enter_anim, R.anim.nav_default_exit_anim);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        soundPool.release();
+        soundPool = null;
     }
 }

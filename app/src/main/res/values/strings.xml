@@ -6,7 +6,7 @@
         <item>The Apostles\' Creed</item>
         <item>The Lord\'s Prayer</item>
         <item>The Sacrament of Holy Baptism</item>
-        <item>Confession</item>
+        <item>The Ministry &amp; Confession</item>
         <item>The Sacrament of the Altar</item>
     </string-array>
     <string name="title_activity_learn_menu">Learn Menu</string>
@@ -25,9 +25,11 @@
     <string name="progress_review_instruction">Fill in the blanks</string>
 
 
-
     <string name="hello_blank_fragment">Oh, you bishops! How will you ever answer to Christ for letting the people carry on so disgracefully and not attending to the duties of your office even for a moment? One can only hope judgment does not strike you! You command the Sacrament in one kind only, insist on the observance of your human ways, and yet are unconcerned whether the people know the Lord\’s Prayer, the Creed, the Ten Commandments, or indeed any of God\’s Word. Woe, woe to you forever!</string>
 
     <string name="long_placeholder_text">I believe that God has made me and all creatures; that He has given me my body and soul, eyes, ears, and all my members, my reason and all my senses, and still takes care of them. He also gives me clothing and shoes, food and drink, house and home, wife and children, land, animals, and all I have. He richly and daily provides me with all that I need to support this body and life. He defends me against all danger and guards and protects me from all evil. All this He does only out of fatherly, divine goodness and mercy, without any merit or worthiness in me. For all this it is my duty to thank and praise, serve and obey Him.</string>
     <string name="tip">Come back to review this again once in awhile to retain what you have learnt.</string>
+
+    <string name="settings_label">Minimum count to practise each phrase: </string>
+    <string name="settings_tips">Note: The higher the number, the longer you will retain it in your head.</string>
 </resources>

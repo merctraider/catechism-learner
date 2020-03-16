@@ -8,7 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
+import androidx.appcompat.widget.Toolbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -37,9 +37,10 @@ public class LearnMenuActivity extends AppCompatActivity {
 
         Resources res = getResources();
 
-        TextView sectionTitleTextView = findViewById(R.id.sectionTitleTextView);
-        TextView progressTextView = findViewById(R.id.progressTextView);
+        //TextView sectionTitleTextView = findViewById(R.id.sectionTitleTextView);
+        //TextView progressTextView = findViewById(R.id.progressTextView);
         ListView partListView = findViewById(R.id.partListView);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         FloatingActionButton floatingActionButton = findViewById(R.id.floatingActionButton);
 
         Bundle bundle = getIntent().getExtras();
@@ -92,8 +93,11 @@ public class LearnMenuActivity extends AppCompatActivity {
 
                     break;
             }
-            progressTextView.setText(sectionProgress);
-            sectionTitleTextView.setText(sectionName);
+            //progressTextView.setText(sectionProgress);
+            //sectionTitleTextView.setText(sectionName);
+            toolbar.setTitle(sectionName);
+            toolbar.setSubtitle(sectionProgress);
+            toolbar.setNavigationIcon(R.drawable.ic_arrow_back);
 
             partListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                 @Override
@@ -116,6 +120,13 @@ public class LearnMenuActivity extends AppCompatActivity {
                     Intent intent = new Intent(LearnMenuActivity.this, ReviewActivity.class);
                     intent.putExtra("SectionIndex", sectionIndex);
                     startActivity(intent);
+                }
+            });
+
+            toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    onBackPressed();
                 }
             });
 

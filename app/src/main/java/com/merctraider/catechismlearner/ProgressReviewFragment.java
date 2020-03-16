@@ -1,7 +1,6 @@
 package com.merctraider.catechismlearner;
 
 import android.content.Context;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
@@ -62,10 +61,15 @@ public class ProgressReviewFragment extends Fragment {
         answerTextView.setText(answer);
 
         if(question.length() > 200){
+
             questionTextView.setMovementMethod(new ScrollingMovementMethod());
         }
         if(answer.length() > 200){
             answerTextView.setMovementMethod(new ScrollingMovementMethod());
+
+        }
+        if(blankAnswer.length() > 300){
+            blankFillInputLayout.getEditText().setTextSize(14);
         }
 
 
@@ -82,8 +86,7 @@ public class ProgressReviewFragment extends Fragment {
             public void onClick(View v) {
                 String userInput = blankFillInputLayout.getEditText().getText().toString();
                 if(checkAnswer(userInput, blankAnswer)){
-                    MediaPlayer ring = MediaPlayer.create(getContext(), R.raw.ding);
-                    ring.start();
+
                     listener.onReviewCompleted(progressIndex);
                 } else {
                     blankFillInputLayout.getEditText().setHint(blankAnswer);
